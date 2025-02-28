@@ -37,15 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'django_filters',
 	'rest_framework',
 	'oauth2_provider',
 	'social_django',
 	'rest_framework_social_oauth2',
-	#'background_task',
 	'users',
 	'task',
 	'house',
-	#'background_jobs'
 ]
 
 MIDDLEWARE = [
@@ -114,6 +113,7 @@ REST_FRAMEWORK = {
 	'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
+	 'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 	'DEFAULT_AUTHENTICATION_CLASSES': [
 		#'rest_framework.authentication.BaseAuthentication', 
 		'rest_framework.authentication.SessionAuthentication',

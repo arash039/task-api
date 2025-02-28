@@ -73,5 +73,10 @@ This project is a task management api built using Django and Django REST Framewo
 ## Usage
 
 - Access the admin panel at `http://127.0.0.1:8000/admin/` to manage users, houses, and tasks.
-- Use the API endpoints to interact with the application programmatically.
+- Use the API endpoints to interact with the application on browsable api:
+```bash
+http://127.0.0.1:8000/api/accounts/users/
+http://127.0.0.1:8000/api/accounts/house/
+http://127.0.0.1:8000/api/accounts/task/
+```
 
